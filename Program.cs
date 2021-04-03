@@ -16,8 +16,9 @@ namespace AnalizeDir
         StreamWriter SwExt;
         static void Main(string[] args)
         {
-            Console.WriteLine($"current dir:{System.Environment.CurrentDirectory}");
+            Console.WriteLine($"Analize Dir Start!! {DateTime.Now}");
             new Program().Proc(args);
+            Console.WriteLine($"Analize Dir End!! {DateTime.Now}");
         }
         void Proc(string[] args)
         {
